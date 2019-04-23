@@ -1,12 +1,11 @@
 header{
-    background-color:   rgb(187, 236, 245);
+    background-color: rgb(31, 185, 160);
 
 }
 .h1Header{
     color: rgb(81, 2, 133)
 }
-#carrusel{
-    background-color: aqua;
+
 }
 #dropdownMenuButton{
     background-color: rgb(73, 11, 75);
@@ -17,7 +16,24 @@ header{
     opacity: 50%;
     max-width: 100%;
 }
-.imagen{
+.flag{
+    height: 100px;
+    width: 100px;
+   
+}
+.conteiner{
+    background-color: rgb(23, 12, 34);
+}
 
-    
+#chile{
+    background-color: rgb(31, 185, 160);
+}
+#brasil{
+    background-color: rgb(31, 185, 160);
+}
+#peru{
+    background-color: rgb(31, 185, 160);
+}
+#mexico{
+    background-color: rgb(31, 185, 160);
 }
