@@ -37,3 +37,7 @@ header{
 #mexico{
     background-color: rgb(31, 185, 160);
 }
+.box{
+    width: 50%;
+    height: 60%;
+}
