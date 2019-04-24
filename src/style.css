@@ -1,43 +1,93 @@
-header{
-    background-color: rgb(31, 185, 160);
-
-}
-.h1Header{
-    color: rgb(81, 2, 133)
+#navbar {
+	background-color: #d3c3ea;
 }
 
-}
-#dropdownMenuButton{
-    background-color: rgb(73, 11, 75);
+#barraBusqueda {
 }
 
-.imagen img{
-    filter: grayscale(20%);
-    opacity: 50%;
-    max-width: 100%;
-}
-.flag{
-    height: 100px;
-    width: 100px;
-   
-}
-.conteiner{
-    background-color: rgb(23, 12, 34);
+#navbarContent {
+	background-color: #aaebd4;
 }
 
-#chile{
-    background-color: rgb(31, 185, 160);
+.h1Header {
+	color: rgb(81, 2, 133);
 }
-#brasil{
-    background-color: rgb(31, 185, 160);
+
+#dropdownMenuButton {
+	background-color: rgb(73, 11, 75);
 }
-#peru{
-    background-color: rgb(31, 185, 160);
+
+.imagen img {
+	filter: grayscale(20%);
+	opacity: 50%;
+	max-width: 100%;
 }
-#mexico{
-    background-color: rgb(31, 185, 160);
+.flag {
+	height: 100px;
+	width: 100px;
 }
-.box{
-    width: 50%;
-    height: 60%;
+.conteiner {
+	background-color: rgb(23, 12, 34);
 }
+
+#chile {
+	background-color: rgb(31, 185, 160);
+}
+#brasil {
+	background-color: rgb(31, 185, 160);
+}
+#peru {
+	background-color: rgb(31, 185, 160);
+}
+#mexico {
+	background-color: rgb(31, 185, 160);
+}
+
+#footer {
+	background-color: #d3c3ea;
+	font-size: 20px;
+	font-family: Cardo;
+}
+
+/*Animaciones del navbar*/
+/* Icon 1 */
+
+.animated-icon1 {
+	width: 30px;
+	height: 20px;
+	position: relative;
+	margin: 0px;
+}
+
+.animated-icon1 span {
+	background: #000000;
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.animated-icon1 span:nth-child(1) {
+	top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+	top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+	top: 20px;
+}
+
+
