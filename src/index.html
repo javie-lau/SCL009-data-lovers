@@ -43,16 +43,33 @@
   </nav>
 
 
-<!--Imágen estática izquierda-->
-<section class="row">
-  <div class="imagen col-md-4" >
-    <img src="../src/imagenes/WOMANKIND.jpg" class="fotoMujeres img-responsive ">
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
   
 
-<!--Carrusel-->
+
+
+<!--ESTO CONTENDRÁ TODO EL SEGUNDO ROW, CON EL CARRUSEL, FOTO ESTÁTICA Y CAJA DE PAÍSES-->
+
+<div class="container">
+  <section class="row">
+    <div class="imagen col-md-4" >
+     <img src="../src/imagenes/WOMANKIND.jpg" class="foto estática "> <!--Imágen estática izquierda-->
+    </div>
+  
+  <!--Carrusel-->
   <div class="col-md-8">
-  <div id="carrusel" class="row" >
+  <div id="carrusel">
       <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -93,19 +110,42 @@
             </a>
           </div>
         </div>
+      </div>
 
+  <!--Caja contenedora botones países-->
+    <section class="row">
+      <div id="paises" class= " row">
+        <input id="chile"type="button" value ="CHILE" class= "col-md-2 btn btn-primary active"></input>
+        <input id="brasil"type="button" value ="BRASIL" class= " col-md-2 btn btn-primary active"></input>
+        <input id="peru"type="button" value ="PERU" class= "col-md-2 btn btn-primary active"></input>
+        <input id="mexico"type="button" value ="MEXICO" class= "  col-md-2 btn btn-primary active"></input>
+      </div>
+    </section>
+      </div>
 
-<!--Caja contenedora botones países-->
-<section class="row">
-  <div id="paises" class= " row">
-    <input id="chile"type="button" value ="CHILE" class= "col-md-2 btn btn-primary active"></input>
-    <input id="brasil"type="button" value ="BRASIL" class= " col-md-2 btn btn-primary active"></input>
-    <input id="peru"type="button" value ="PERU" class= "col-md-2 btn btn-primary active"></input>
-    <input id="mexico"type="button" value ="MEXICO" class= "  col-md-2 btn btn-primary active"></input>
-  </div>
-</section>
+  </section>
 </div>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--FOOTER-->
 <footer> 
