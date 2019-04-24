@@ -6,31 +6,51 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
+  
   <body>
-   <header class="container-fluid">
-     <div class="row">
-     <!-- <input id="inicio"type="button" value ="inicio" class= " col-md-2 btn btn-primary active"></input>-->
-       <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           tematicas
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Violencia</a>
-            <a class="dropdown-item" href="#">Empleabilidad</a>
-            <a class="dropdown-item" href="#">Educación</a>
-          </div>
-        </div> 
-       <h1 class= " h1Header col-md 9 text-center" >Data-Fem</h1>
-      </div>
-      </header>
- <div class= "conteiner">
+    <!--NAVBAR-->
+  <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
+    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+      aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
 
+<!--BARRA DE BÚSQUEDA-->
+  <nav> <form class= "form-inline" > <input class= "form-control mr-sm-2" type= "search" placeholder= "Introduce tu búsqueda aquí"> <button class= "btn btn-outline-success my-2 my-sm-0" type= "submit" > Search </button> </form> </nav> 
+
+
+    DATAFEM
+    <!--Collapsible content-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+
+      
+      <!--Links-->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca del Proyecto</a> <!--<span class="sr-only">(current)</span></a>-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cómo Funciona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Estadísticas</a>
+        </li>
+      </ul> 
+    </div>  
+  </nav>  
+   
+
+<!--Imágen estática izquierda-->
 <section class="row">
-
   <div class="imagen col-xs-12 col-sm-4 col-md-4" >
-    <img src="C:\Users\PANGUI\Desktop\SCL009-data-lovers\src/imagenes/mujeres.jpg" class="fotoMujeres img-responsive ">
-
+    <img src="../src/imagenes/WOMANKIND.jpg" class="fotoMujeres img-responsive ">
   </div>
+
+<!--Carrusel-->
   <div class=" col-md-8">
   <div id="carrusel" class="row" >
       <div class="bd-example">
@@ -83,10 +103,14 @@
    </div>
 
 </div>
-
-
 </section>
-<footer> </footer>
+
+<!--FOOTER-->
+<footer> 
+    <div id = "footer" class="footer-copyright">© Todos los Derechos Reservados DATA FEM</div>
+</footer>
+
+
 
  </div>    
     <div id="root"></div>
