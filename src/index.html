@@ -9,6 +9,7 @@
   </head>
   
   <body>
+    <div id="paginaUno">
 
     <!--NAVBAR-->
   <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
@@ -46,16 +47,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -130,33 +121,65 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--FOOTER-->
 <footer> 
     <div id = "footer" class="footer-copyright">© Todos los Derechos Reservados DATA FEM</div>
 </footer>
+</div>
 
-
-
- </div>    
-    <div id="root"></div>
-    <input id=data type="text" class= "box"/>
+    <div id="root">
+        <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="animated-icon1"><span></span><span></span><span></span>
+              </div>
+            </button>
+            <nav id="barraBusqueda"> 
+                <form class= "form-inline" > <input class= "form-control mr-sm-2" type= "search" placeholder= "Introduce tu búsqueda aquí"> 
+                  <button class= "btn btn-outline-success my-2 my-sm-0" type= "submit" > Search </button> 
+                </form> 
+          </nav>
+            <!--Colapse-->
+          <div class="collapse navbar-collapse" id="navbarContent">
+                <!--Links de menu hamburguesa-->
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca del Proyecto</a> <!--<span class="sr-only">(current)</span></a>-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cómo Funciona</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Estadísticas</a>
+                  </li>
+                </ul> 
+              </div>  
+          </nav>
+        
+        <div class="select col-md 3" style=" margin top:10 px; ">
+            <select  id="datChile" >
+              <option value=" seleccion">
+                selecciona
+            
+              </option>
+              <option value= "Empleo">
+                  "Empleo de tiempo parcial, mujeres (% del total de mujeres empleadas)"
+              </option>
+              <option value="eduacion basica">
+                  "Fuerza laboral con educación básica, mujeres (% de la fuerza laboral femenina)"
+              </option>
+            </select>
+            </div>
+            <!--<footer> 
+                <div id = "footer" class="footer-copyright">© Todos los Derechos Reservados DATA FEM</div>
+            </footer> -->
+             </div>   
+             
+    </div>
+   
 
 <script src="js/jquery.js"></script>
     <script src="./data/worldbank/worldbank.js"></script> 
