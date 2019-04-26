@@ -2,8 +2,7 @@
 	background-color: #d3c3ea;
 }
 
-#barraBusqueda {
-}
+
 
 #navbarContent {
 	background-color: #aaebd4;
@@ -89,7 +88,7 @@
 .animated-icon1 span:nth-child(3) {
 	top: 20px;
 }
-<<<<<<< HEAD
+
 #mexico{
     background-color: rgb(31, 185, 160);
 }
@@ -97,5 +96,10 @@
     width: 50%;
     height: 60%;
 }
-=======
->>>>>>> aa6563b74232b5f9f8763bb4b8717e6c239b24ff
+
+
+.caja{
+	width:40%;
+    height:8rem
+}
+
