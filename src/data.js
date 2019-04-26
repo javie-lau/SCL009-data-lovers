@@ -21,7 +21,7 @@ for(const index in filterCHL){
 }
 
 
-//window.example = example;
+//window.example = example; probar con esto
 
 
 
