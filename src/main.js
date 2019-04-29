@@ -14,6 +14,7 @@ document.getElementById("chile").addEventListener("click",()=>{
           
           document.getElementById("filteredData").value = show;
 
+          
      })
 });
 
