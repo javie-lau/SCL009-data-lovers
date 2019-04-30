@@ -51,12 +51,12 @@
 
 
 <!--ESTO CONTENDRÁ TODO EL SEGUNDO ROW, CON EL CARRUSEL, FOTO ESTÁTICA Y CAJA DE PAÍSES-->
-
-<div class="container">
+<div id="costado">
   <section class="row">
     <div class="imagen col-md-4" >
      <img src="../src/imagenes/WOMANKIND.jpg" class="foto estática "> <!--Imágen estática izquierda-->
-    </div>
+    
+  </div>    
   
   <!--Carrusel-->
   <div class="col-md-8">
@@ -104,14 +104,24 @@
       </div>
 
   <!--Caja contenedora botones países-->
-    <section class="row">
-      <div id="paises" class= " row">
-        <input id="chile"type="button" value ="CHILE" class= "col-md-2 btn btn-primary active"></input>
-        <input id="brasil"type="button" value ="BRASIL" class= " col-md-2 btn btn-primary active"></input>
-        <input id="peru"type="button" value ="PERU" class= "col-md-2 btn btn-primary active"></input>
-        <input id="mexico"type="button" value ="MEXICO" class= "  col-md-2 btn btn-primary active"></input>
+  <div class="container-fluid">
+    <section >
+      <div id="paises" class="row">
+        <div class="flag1 col-md-2">
+          <input id="chile"type="button" value ="CHILE" class= "btn btn-primary active"></input>
+        </div>
+        <div class="flag2 col-md-2">
+          <input id="brasil"type="button" value ="BRASIL" class= "btn btn-primary active"></input>
+        </div>
+        <div class="flag3 col-md-2">
+          <input id="peru"type="button" value ="PERU" class= " btn btn-primary active"></input>
+        </div>
+        <div class="flag4 col-md-2">
+           <input id="mexico"type="button" value ="MEXICO" class= "btn btn-primary active"></input>
+        </div>
       </div>
     </section>
+  </div>
       </div>
 
   </section>
@@ -120,7 +130,7 @@
 
 </div>
 
-    <div id="root">
+<div id="root">
         <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
             <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
               aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -165,11 +175,15 @@
                   "Fuerza laboral con educación básica, mujeres (% de la fuerza laboral femenina)"
               </option>
             </select>
-            <input  id="filteredData" type="text" class="caja">
-            </div>
             
-             </div>   
-             
+          
+           <!-- <input  id="filteredData" type="text" class="caja"> -->
+        </div>
+            
+</div>   
+        <div id="prueba">
+         
+        </div>     
              
     </div><br>
             <footer> 

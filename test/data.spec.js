@@ -4,10 +4,10 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('example', () => {
+describe('filterData', () => {
   
   it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
+    assert.equal(typeof 'filterData', 'function');
   });
 
   it('debería retornar "example"', () => {
