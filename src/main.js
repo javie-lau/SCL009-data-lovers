@@ -18,7 +18,7 @@ document.getElementById("chile").addEventListener("click",()=>{
           console.log(key);
           let value= Object.values(show)
           console.log(value);
-          
+          //variables de tabla
           let hilera="";
           let celda="";
           let keyOne="";
@@ -26,7 +26,7 @@ document.getElementById("chile").addEventListener("click",()=>{
           let celda1="";
           let textoCelda="";
           let textoCelda1="";
-              
+            //TABLA DINAMICA  
               // Obtener la referencia del elemento body
              let body = document.getElementById("prueba");
               
@@ -38,26 +38,19 @@ document.getElementById("chile").addEventListener("click",()=>{
                for (let i = 0; i < key.length; i++) {
                    
                     keyOne=key[i];
+                    valueOne=value[i];
                     console.log(keyOne)
                     
                  // Crea las hileras de la tabla
               
-                  for (let j = 0; j < value.length; j++) {
-                   valueOne = value[j];
-                   console.log(valueOne)
-                    // Crea un elemento <td> y un nodo de texto, haz que el nodo de
-                   // texto sea el contenido de <td>, ubica el elemento <td> al final
-                   // de la hilera de la tabla
-                   
-                  
-               
+                 
                 hilera= document.createElement("tr");
                 celda = document.createElement("td");
                 celda1= document.createElement("td")
              
                textoCelda = document.createTextNode("año"+keyOne );
                textoCelda1 = document.createTextNode("data" +valueOne);
-              }
+               
                 celda1.appendChild(textoCelda1);
                 celda.appendChild(textoCelda);
                 hilera.appendChild(celda);
