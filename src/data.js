@@ -1,4 +1,9 @@
 
+
+const peru =WORLDBANK.PER.indicators;
+const brasil= WORLDBANK.BRA.indicators;
+const mexico= WORLDBANK.MEX.indicators;
+
 function filterData(code){
 
 const filterChile = Object.entries(WORLDBANK.CHL);//convertir objeto en array
