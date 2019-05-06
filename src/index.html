@@ -106,19 +106,13 @@
   <!--Caja contenedora botones países-->
   <div class="container-fluid">
     <section >
-      <div id="paises" class="row">
-        <div class="flag1 col-md-2">
-          <input id="chile"type="button" value ="CHILE" class= "btn btn-primary active"></input>
-        </div>
-        <div class="flag2 col-md-2">
-          <input id="brasil"type="button" value ="BRASIL" class= "btn btn-primary active"></input>
-        </div>
-        <div class="flag3 col-md-2">
-          <input id="peru"type="button" value ="PERU" class= " btn btn-primary active"></input>
-        </div>
-        <div class="flag4 col-md-2">
-           <input id="mexico"type="button" value ="MEXICO" class= "btn btn-primary active"></input>
-        </div>
+     <select name="Paises" id="selectCountry">
+       <option value="">Selecciona el País</option>
+       <option value="WORLDBANK.CHL">Chile</option>
+       <option value="WORLDBANK.PER">Perú</option>
+       <option value="WORLDBANK.BRA">Brasil</option>
+       <option value="WORLDBANK.MEX">Mexico</option>
+     </select>
       </div>
     </section>
   </div>
@@ -175,6 +169,9 @@
                   "Fuerza laboral con educación básica, mujeres (% de la fuerza laboral femenina)"
               </option>
             </select>
+            <button id="TableAsc" class="btn btn-outline-dark">ordenar ascendente</button>
+            <button id="TableDesc" class="btn btn-outline-dark" >ordenar descendente</button>
+           
                  <div id="prueba">
                   
                    
@@ -193,11 +190,11 @@
             </footer>
    
 
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
+<script src ="../js/bootstrap.min.js"></script>
     <script src="./data/worldbank/worldbank.js"></script> 
-     <script src="data.js"></script>
+    <script src="data.js"></script>
     <script src="main.js"></script>
-    <script src ="js/bootstrap.min.js"></script>
     
     
   </body>
