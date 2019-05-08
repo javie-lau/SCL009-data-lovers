@@ -1,14 +1,15 @@
 
 
-
 function filterData(pais, code){//agregue pais como parametro de la función
 
 
 
-let country_indicator = window.WORLDBANK.CHL;//variable que s etoma y va cambiando con swith
+let country_indicator = "";//variable que s etoma y va cambiando con swith
 switch (pais) // me permite dar mas indicaciones por cada caso. paises 
 {
-   
+     case "WORLDBANK.CHL": 
+     country_indicator = window.WORLDBANK.CHL;//si aprietan brasil toma este let
+     break;
        case "WORLDBANK.BRA": 
        country_indicator = window.WORLDBANK.BRA;//si aprietan brasil toma este let
        break;
@@ -28,6 +29,7 @@ const filterCHL= (filterChile[0])[1];
 let arrTime = [];
 let arrtimeData=[];
 
+
 for(const index in filterCHL){//recorriendo indicadores
      const filterIndicator= filterCHL[index];//resultado de recorrido
      
@@ -37,7 +39,7 @@ for(const index in filterCHL){//recorriendo indicadores
                arrTime.push(filterIndicator[obj])
               
               arrtimeData=arrTime[0];
-               
+              
               
           }
      }  
@@ -49,16 +51,86 @@ for(const index in filterCHL){//recorriendo indicadores
 
 window.filterData = filterData;
 
-function order(arr_data){
-     let sort_array = arr_data.sort(function(a, b){
-          var keyA = new Date(a.updated_at),
-          keyB = new Date(b.updated_at);
-          // Compare the 2 dates
-          if(keyA < keyB) return -1;
-          if(keyA > keyB) return 1;
-          return 0;
-     });
 
-     return sort_array;
-}
- 
+function average (numbers) {
+
+    
+
+     let sum = 0;
+     let nuevoArray=Object.values(numbers);
+    
+     for (let index in numbers){
+          
+          newValue=numbers[index];
+         
+          sum += parseFloat(newValue);
+        }
+     
+     return sum / nuevoArray.length;
+    
+   }
+   window.average = average;
+/*
+const sortData=(show, sortBy, sortOrder)=>{
+    return show.sort((a,b)=>{
+         let x=a[sortBy],
+             y=b[sortBy];
+             if(sortOrder==="asc"){
+                  return((x<y)? -1 :((x>y)? 1: 0));
+             }
+             if(sortOrder === "desc"){
+                  return((x>y)? -1 :((x<y) ? 1: 0));
+             }
+    }
+    )};
+   window.sortData = sortData;*/
+   //promedio
+  /* function average (valueOne){
+        let sum= 0;
+        if(!valueOne.length){
+             return sum;
+        }
+        for(let i=0; i<valueOne.length;i++){
+             sum += valueOne[i]
+        }
+        return sum/valueOne.length;
+   }
+   
+   window.average=average;*/
+  
+//devuelve el indice del forindicador
+
+/*
+let orderDAta= (valueOne,sortBy,sortOrder) =>{
+     let order=[];
+     switch(sortOrder){
+      case "TableAsc":
+      if(sortBy === ""){
+         order = valueOne.sort((a,b)=> (a. > b.  1: -1));
+      }
+      else(){
+
+      }
+      break;
+      case "TableDesc":
+      if(){
+
+     }
+     else(){
+
+     }
+     break;
+     default:
+     }
+     return order;
+};
+window.orderDAta=orderDAta
+
+//computeStats(data) funcion para sacar promedio
+
+ const filterMujeres= (data,condition) =>{
+     let result= data.filter(element=>{ 
+          return element.indicatorName.includes("mujeres")});
+          return result;
+ }
+ window.filterMujeres= filterMujeres*/

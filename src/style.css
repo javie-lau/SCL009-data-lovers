@@ -1,7 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+.texto-encima{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 3rem;
+	color: white;
+}
+.result{
+	background-color: #ebd4ee
+}
+#root{
+	background-color: #e5d7fa
+}
+h2{
+	color: white;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+h4{
+	color: purple;
+	font-family: 'Allerta Stencil', sans-serif;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+
+
+#promedio{
+	margin-top:0rem;
+}
+
 #navbar {
 	background-color: #d3c3ea;
 }
-
+#navbar2 {
+	background-color: #d3c3ea;
+}
 
 
 #navbarContent {
@@ -25,27 +63,16 @@
 	height: 100px;
 	width: 100px;
 }
-.conteiner {
-	background-color: rgb(23, 12, 34);
-}
 
-#chile {
-	background-color: rgb(31, 185, 160);
-}
-#brasil {
-	background-color: rgb(31, 185, 160);
-}
-#peru {
-	background-color: rgb(31, 185, 160);
-}
-#mexico {
-	background-color: rgb(31, 185, 160);
-}
 
-#footer {
+
+
+
+
+.footer-copyright {
 	background-color: #d3c3ea;
 	font-size: 20px;
-	font-family: Cardo;
+	font-family: 'Allerta Stencil', sans-serif;
 }
 
 /*Animaciones del navbar*/
@@ -89,9 +116,7 @@
 	top: 20px;
 }
 
-#mexico{
-    background-color: rgb(31, 185, 160);
-}
+
 .box{
     width: 50%;
     height: 60%;
@@ -101,4 +126,12 @@
 .caja{
 	width:40%;
     height:8rem
+}
+
+
+#buttonIndicator{
+	position: relative;
+    right: 30%;
+    left: 30%;	
+
 }

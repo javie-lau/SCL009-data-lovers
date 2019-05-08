@@ -4,31 +4,35 @@ document.getElementById("paginaUno").style.display="block";//invisible
 document.getElementById("root").style.display="none";//visible
 
 let show="";
-
-document.getElementById("selectCountry").addEventListener("change",()=>{// boton chile
+let keyOne="";
+let valueOne="";
+let body = "";
+document.getElementById("buttonIndicator").addEventListener("click",()=>{// boton chile
      
      document.getElementById("paginaUno").style.display="none";//invisible
-     document.getElementById("root").style.display="block";//visible
-     
+     document.getElementById("root").style.display="block";
+});//visible
+     document.getElementById("selectCountry").addEventListener("change",()=>{// boton chile
 
      document.getElementById("datChile").addEventListener("change",() =>{//select de indicadores
-          
+         
           show =window.filterData(document.getElementById("selectCountry").value,document.getElementById("datChile").value);//le estoy enviando parametro a mi funcion, ambos parametros pais y code
           
          // alert(JSON.stringify(show));
           let key = Object.keys(show)
           let value= Object.values(show)
+          
           //variables de tabla
           let hilera="";
           let celda="";
-          let keyOne="";
-          let valueOne="";
+          
+         
           let celda1="";
           let textoCelda="";
           let textoCelda1="";
             //TABLA DINAMICA  
               // Obtener la referencia del elemento body
-             let body = document.getElementById("prueba");
+              body = document.getElementById("prueba");
               
                // Crea un elemento <table> y un elemento <tbody>
                let tabla   = document.createElement("table");
@@ -39,6 +43,7 @@ document.getElementById("selectCountry").addEventListener("change",()=>{// boton
                    
                     keyOne=key[i];
                     valueOne=value[i];
+                   
                     
                     if(valueOne){
    
@@ -47,7 +52,7 @@ document.getElementById("selectCountry").addEventListener("change",()=>{// boton
                 celda = document.createElement("td");
                 celda1= document.createElement("td")
              
-               textoCelda = document.createTextNode("año"+keyOne );
+               textoCelda = document.createTextNode("año "+keyOne );
                textoCelda1 = document.createTextNode(valueOne);
                
                 celda1.appendChild(textoCelda1);
@@ -64,23 +69,21 @@ document.getElementById("selectCountry").addEventListener("change",()=>{// boton
                tabla.appendChild(tblBody);
                body.appendChild(tabla);
                tabla.setAttribute("border", "2");
+
+               
+              
+            
+
+               document.getElementById("promedio").addEventListener("click",()=>{
+                  
                    
-             
-         
+                const travel_average =window.average(show);
+                console.log(travel_average);
+
+                    
+                 document.getElementById("promedioText").innerHTML+=travel_average;
      });
-
-    // ordenar tabla de indicador
-    //TableDesc.addEventListener("click", ()=>{
-    //alert(show.sort());
-//})
-
-
-     
+    });
+    
 });
 
-
-
-    
-
-
-         

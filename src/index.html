@@ -9,7 +9,8 @@
   </head>
   
   <body>
-    <div id="paginaUno">
+
+<div id="paginaUno">
 
     <!--NAVBAR-->
   <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
@@ -51,16 +52,17 @@
 
 
 <!--ESTO CONTENDRÁ TODO EL SEGUNDO ROW, CON EL CARRUSEL, FOTO ESTÁTICA Y CAJA DE PAÍSES-->
-<div id="costado">
-  <section class="row">
+<div class="costado container-fluid">
+  <section class="row content">
     <div class="imagen col-md-4" >
-     <img src="../src/imagenes/WOMANKIND.jpg" class="foto estática "> <!--Imágen estática izquierda-->
-    
-  </div>    
+     <img src="../src/imagenes/WOMANKIND2.jpg" class="foto estática "> <!--Imágen estática izquierda-->
+       <div class="texto-encima">DATOS PARA<br/> PODER VER / <br/>VER PARA CAMBIARNOS</div>
+    </div>    
   
-  <!--Carrusel-->
+<!--Carrusel-->
   <div class="col-md-8">
-  <div id="carrusel">
+    <div class="container">
+    <div id="carrusel">
       <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -70,25 +72,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../src/imagenes/brasilOpacidad.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+                <img src="../src/imagenes/carrousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
-                <img src="../src/imagenes/indigenaOpacidad.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+                <img src="../src/imagenes/carrousel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
-                <img src="../src/imagenes/marcha-opacidad.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
+                <img src="../src/imagenes/carrousel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -102,42 +95,36 @@
           </div>
         </div>
       </div>
-
-  <!--Caja contenedora botones países-->
-  <div class="container-fluid">
-    <section >
-     <select name="Paises" id="selectCountry">
-       <option value="">Selecciona el País</option>
-       <option value="WORLDBANK.CHL">Chile</option>
-       <option value="WORLDBANK.PER">Perú</option>
-       <option value="WORLDBANK.BRA">Brasil</option>
-       <option value="WORLDBANK.MEX">Mexico</option>
-     </select>
-      </div>
+  
+    <div class="button1 col-md-12">
+         <h4>Indicadores de genero, data Banco Mundial</h4>
+         <p>Datos sobre temas clave de género. Los temas incluidos son demografía, educación, salud, fuerza laboral y participación política.</p>
+         <button id="buttonIndicator" type="button" class="btn btn-success btn-lg">Revisa aquí los indicadores</button>
+    </div>
+  </div>
+</div>
     </section>
   </div>
-      </div>
-
-  </section>
 </div>
 
 
-</div>
+<!--Fin Página uno-->
+
 
 <div id="root">
-        <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
+        <nav id="navbar2" class="navbar navbar-light amber lighten-4 mb-4">  
             <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
               aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <div class="animated-icon1"><span></span><span></span><span></span>
               </div>
             </button>
-            <nav id="barraBusqueda"> 
+            <nav id="barraBusqueda2"> 
                 <form class= "form-inline" > <input class= "form-control mr-sm-2" type= "search" placeholder= "Introduce tu búsqueda aquí"> 
                   <button class= "btn btn-outline-success my-2 my-sm-0" type= "submit" > Search </button> 
                 </form> 
-          </nav>
+            </nav>
             <!--Colapse-->
-          <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="collapse navbar-collapse" id="navbarContent2">
                 <!--Links de menu hamburguesa-->
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
@@ -155,8 +142,20 @@
                 </ul> 
               </div>  
           </nav>
-        
-        <div class="select col-md 3" style=" margin-top:10 px;">
+          
+  <div class="selectPais container-fluid">
+  <div class="row">
+      <div class="select col-md 4" >
+            <select name="Paises" id="selectCountry">
+              <option value="">Selecciona el País</option>
+              <option value="WORLDBANK.CHL">Chile</option>
+              <option value="WORLDBANK.PER">Perú</option>
+              <option value="WORLDBANK.BRA">Brasil</option>
+              <option value="WORLDBANK.MEX">Mexico</option>
+            </select>
+      </div>
+             
+        <div class="select col-md 4" style=" margin-top:10 px;">
             <select  id="datChile" >
               <option value= "" >
                 selecciona
@@ -168,33 +167,60 @@
               <option value= "SL.TLF.INTM.ZS">
                   "Fuerza laboral con educación básica, mujeres (% de la fuerza laboral femenina)"
               </option>
+              <option value="SL.SRV.EMPL.FE.ZS">
+                "Empleados de servicios, mujeres (% del empleo femenino)"
+              </option>
+              <option value="SG.VAW.REAS.ZS">
+                "Mujeres que creen que está justificado que un marido golpee a su esposa (%)"
+              </option>
+              
+              <option value="SG.VAW.1549.ZS">
+                "Proporción de mujeres víctimas de violencia física o sexual en los últimos 12 meses (% de mujeres de entre 15 y 49 años)"
+              </option>
+              <option value="SG.GEN.PARL.ZS">
+                "Proporción de escaños ocupados por mujeres en los parlamentos nacionales (%)"
+              </option>
+              <option value="SP.POP.BRTH.MF">
+                  "Proporción de sexos al nacer (mujeres cada 1000 hombres)"
+              </option>
             </select>
-            <button id="TableAsc" class="btn btn-outline-dark">ordenar ascendente</button>
-            <button id="TableDesc" class="btn btn-outline-dark" >ordenar descendente</button>
-           
-                 <div id="prueba">
-                  
-                   
-                 </div>     
-            
+          </div>
+                      
+          <div class="select col-md 4" >
+            <button id="promedio" type="button" class="btn btn-outline-success">Promedio</button>
+          </div>
+      </div>
+    </div>
+    <div class= "result">
+    <div class="row">
+               <div class="col-md-6">
+                 <div id="prueba"> 
+                </div> 
+                </div> 
+               <div class="col-md-6">         
+                 <div id="promedioText">
+                 </div>  
+               </div>   
+    </div>  
+    </div>
+  </div>
+       
+         
           
-          
-        </div>
+
             
-</div>   
+  
         
              
-    </div><br>
-            <footer> 
-                <div id = "footer" class="footer-copyright">© Todos los Derechos Reservados DATA FEM</div>
-            </footer>
+   
+<footer class="footer-copyright">© Todos los Derechos Reservados DATA FEM</footer>
    
 
-<script src="../js/jquery.js"></script>
-<script src ="../js/bootstrap.min.js"></script>
-    <script src="./data/worldbank/worldbank.js"></script> 
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+          <script src="../js/jquery.js"></script>
+          <script src ="../js/bootstrap.min.js"></script>
+          <script src="./data/worldbank/worldbank.js"></script> 
+          <script src="data.js"></script>
+          <script src="main.js"></script>
     
     
   </body>
