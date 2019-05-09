@@ -69,20 +69,28 @@ document.getElementById("buttonIndicator").addEventListener("click",()=>{// boto
                tabla.appendChild(tblBody);
                body.appendChild(tabla);
                tabla.setAttribute("border", "2");
-
-               
+               tabla.setAttribute("align", "center");
+               tabla.setAttribute("color", "blue");
               
-            
 
-               document.getElementById("promedio").addEventListener("click",()=>{
-                    document.getElementById("promedioText").innerHTML = " "
+              /* document.getElementById("TableDesc").addEventListener("click",()=>{
+
+                    let sortData=window.orderDAta(show);
+                    console.log(sortData);
+
+               });*/
+              
+             
+
+               document.getElementById("promedio").addEventListener("click",()=>{//boton de promedio
+                    document.getElementById("promedioText").innerHTML = " "//para que se limpie el valor de promedio
               let idText = document.getElementById("promedioText")
               let text= document.createElement("text");  
                 const travel_average =window.average(show);
-                let NodeText = document.createTextNode( "El promedio de los valores es :"+ travel_average);
-                text.appendChild(NodeText);
+                //let NodeText = document.createTextNode
+                text.innerHTML=( "El promedio de los valores es :"+ travel_average);
                 idText.appendChild(text);
-                
+               
                
               
      });

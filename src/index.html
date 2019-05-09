@@ -2,67 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>FEM DATA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>F3M D4T4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One" rel="stylesheet">
-  </head>
+   
+    </head>
   
   <body>
 
 <div id="paginaUno">
 
     <!--NAVBAR-->
-  <nav id="navbar" class="navbar navbar-light amber lighten-4 mb-4">  
-    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon1"><span></span><span></span><span></span>
-      </div>
-    </button>
-    <nav id="barraBusqueda"> 
-        <form class= "form-inline" > <input class= "form-control mr-sm-2" type= "search" placeholder= "Introduce tu búsqueda aquí"> 
-          <button class= "btn btn-outline-success my-2 my-sm-0" type= "submit" > Search </button> 
-        </form> 
-  </nav>
-    <!--Colapse-->
-  <div class="collapse navbar-collapse" id="navbarContent">
-        <!--Links de menu hamburguesa-->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acerca del Proyecto</a> <!--<span class="sr-only">(current)</span></a>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cómo Funciona</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Estadísticas</a>
-          </li>
-        </ul> 
-      </div>  
-  </nav>
-
-
-
-
-
-
-
-
-<!--ESTO CONTENDRÁ TODO EL SEGUNDO ROW, CON EL CARRUSEL, FOTO ESTÁTICA Y CAJA DE PAÍSES-->
-<div class="costado container-fluid">
-  <section class="row content">
-    <div class="imagen col-md-4" >
-     <img src="../src/imagenes/WOMANKIND2.jpg" class="foto estática "> <!--Imágen estática izquierda-->
-       <div class="texto-encima">DATOS PARA<br/> PODER VER / <br/>VER PARA CAMBIARNOS</div>
-    </div>    
+    <ul class="nav justify-content-end" >
+      <nav class="navbar navbar-expand-lg navbar-light ">
+             
+              <button class=" collapse1 navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"  ></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+  <li class="nav-item">
+    <a class="nav-link active" style="color:rgb(42, 7, 56)" href="#">Indicadores</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" style="color:rgb(42, 7, 56);"href="#">Proyecto </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active"style="color:rgb(42, 7, 56)" href="#">Contacto</a>
+  </li>
   
-<!--Carrusel-->
-  <div class="col-md-8">
-    <div class="container">
+  </div>
+   </nav> 
+   <li class="nav-item">
+      <a href="index.html"><h1>F3MD4T4</h1></a>
+    </li>                              
+</ul>
+   </li>
+ 
+<!--ACERCA DEL PROYECTO-->
+<div class="proyecto container">
+ 
+  <h2 class="acerca" >ACERCA DEL PROYECTO</h2>
+      <div class="h-divider">
+      </div>
+  
+  <h3 class="proyecto text-left">Es una herramienta para la investigación y exposición de las problemáticas que han vivido por siglos las mujeres, aportando con datos busca ser un aporte en la construcción colectiva del feminismo.</h3>
+          
+</div>
+
+
+   
+    
+    
+<!--CARROUSEL-->
+  <div class="col-sm">
     <div id="carrusel">
+      <div class="container">
+  
       <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -95,53 +93,70 @@
           </div>
         </div>
       </div>
-  
-    <div class="button1 col-md-12">
-         <h4>Indicadores de genero, data Banco Mundial</h4>
+    </div>
+  </div>
+    
+
+<div class="button1">
+    <div class="container">
+        <h2>INDICADORES DE GENERO, DATA BANCO MUNDIAL</h2>
+        <div class="h-divider"></div>
          <p>Datos sobre temas clave de género. Los temas incluidos son demografía, educación, salud, fuerza laboral y participación política.</p>
          <button id="buttonIndicator" type="button" class="btn btn-success btn-lg">Revisa aquí los indicadores</button>
     </div>
-  </div>
 </div>
-    </section>
-  </div>
+
 </div>
 
 
 <!--Fin Página uno-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="root">
-        <nav id="navbar2" class="navbar navbar-light amber lighten-4 mb-4">  
-            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
-              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-              <div class="animated-icon1"><span></span><span></span><span></span>
-              </div>
-            </button>
-            <nav id="barraBusqueda2"> 
-                <form class= "form-inline" > <input class= "form-control mr-sm-2" type= "search" placeholder= "Introduce tu búsqueda aquí"> 
-                  <button class= "btn btn-outline-success my-2 my-sm-0" type= "submit" > Search </button> 
-                </form> 
-            </nav>
-            <!--Colapse-->
-          <div class="collapse navbar-collapse" id="navbarContent2">
-                <!--Links de menu hamburguesa-->
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca del Proyecto</a> <!--<span class="sr-only">(current)</span></a>-->
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cómo Funciona</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Recursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Estadísticas</a>
-                  </li>
-                </ul> 
-              </div>  
-          </nav>
+         <!--NAVBAR-->
+         <ul class="nav justify-content-end" >
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                   
+                    <button class=" collapse1 navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                      <span class="navbar-toggler-icon"  ></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        <li class="nav-item">
+          <a class="nav-link active" style="color:rgb(42, 7, 56)" href="#">Indicadores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color:rgb(42, 7, 56);"href="#">Proyecto </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"style="color:rgb(42, 7, 56)" href="#">Contacto</a>
+        </li>
+        
+        </div>
+         </nav> 
+         <li class="nav-item">
+            <a href="index.html"><h1>F3MD4T4</h1></a>
+          </li>                              
+      </ul>
+         </li>
           
   <div class="selectPais container-fluid">
   <div class="row">
@@ -170,14 +185,8 @@
               <option value="SL.SRV.EMPL.FE.ZS">
                 "Empleados de servicios, mujeres (% del empleo femenino)"
               </option>
-              <option value="SL.EMP.MPYR.FE.ZS">
-                "Empleadores, mujeres (% del empleo femenino)"
-              </option>
-              <option value="SL.UEM.1524.FE.ZS">
-                "Desempleo, mujeres jóvenes (% de la población activa femenina entre 15 y 24 años de edad)""
-              </option>
-              <option value="SL.UEM.TOTL.FE.NE.ZS">
-                "Desempleo, mujeres (% de participación femenina en la fuerza laboral) (estimación nacional)"
+              <option value="SG.VAW.REAS.ZS">
+                "Mujeres que creen que está justificado que un marido golpee a su esposa (%)"
               </option>
               
               <option value="SG.VAW.1549.ZS">
@@ -189,23 +198,11 @@
               <option value="SP.POP.BRTH.MF">
                   "Proporción de sexos al nacer (mujeres cada 1000 hombres)"
               </option>
-              <option value="SP.POP.0004.FE.5Y">
-                "Población de 0 a 4 años, mujeres (% de la población femenina)"
-              </option>
-              <option value="SP.POP.0014.FE.IN">
-                "Población entre 0 y 14 años de edad, mujeres"
-              </option>
-              <option value="SP.POP.65UP.FE.ZS">
-                "Población de 65 años de edad y más, mujeres (% del total)"
-              </option>
-              <option value="SL.TLF.TOTL.FE.ZS">
-                "Población activa, mujeres (% de la población activa total)"
-              </option>
             </select>
           </div>
                       
           <div class="select col-md 4" >
-            <button id="promedio" type="button" class="btn btn-outline-success">Promedio</button>
+            <button id="promedio" type="button" class="btn btn-light"><div id="promed">Saca el Promedio</div></button>
           </div>
       </div>
     </div>
@@ -232,11 +229,13 @@
         
              
    
-<footer class="footer-copyright">© Todos los Derechos Reservados DATA FEM</footer>
-   
+<footer class="footer-copyright">© Todos los Derechos Reservados FEMDATA</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-          <script src="../js/jquery.js"></script>
-          <script src ="../js/bootstrap.min.js"></script>
+         <!--<script src="../js/jquery.js"></script>
+          <script src ="../js/bootstrap.min.js"></script>-->
           <script src="./data/worldbank/worldbank.js"></script> 
           <script src="data.js"></script>
           <script src="main.js"></script>

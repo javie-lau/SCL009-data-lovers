@@ -1,8 +1,11 @@
-
+//let {PER,MEX,BRA,CHL} = window.WORLDBANK;
+/*
+let PER = PER; 
+let MEX = MEX;
+let BRA = BRA;
+let CHL = CHL;*/
 
 function filterData(pais, code){//agregue pais como parametro de la función
-
-
 
 let country_indicator = "";//variable que s etoma y va cambiando con swith
 switch (pais) // me permite dar mas indicaciones por cada caso. paises 
@@ -24,7 +27,7 @@ switch (pais) // me permite dar mas indicaciones por cada caso. paises
 }
 
 const filterChile = Object.entries(country_indicator);//convertir objeto en array
-const filterCHL= (filterChile[0])[1];
+const filterCHL= (filterChile[0])[1];//filtrando indicadores
 
 let arrTime = [];
 let arrtimeData=[];
@@ -38,7 +41,8 @@ for(const index in filterCHL){//recorriendo indicadores
               
                arrTime.push(filterIndicator[obj])
               
-              arrtimeData=arrTime[0];
+              arrtimeData=arrTime[0];//entrando a la data
+              
               
               
           }
@@ -52,16 +56,16 @@ for(const index in filterCHL){//recorriendo indicadores
 window.filterData = filterData;
 
 
-function average (numbers) {
-
+function average (numbers) {//promedio
+     let newValue="";
      let sum = 0;
      let i = 0;
-     var nuevoArray= Object.values(numbers);
+     let nuevoArray= Object.values(numbers);//array de los valores del objeto
       
-     for (let index in nuevoArray){
-          newValue=parseFloat(nuevoArray[index]);
+     for (let index in nuevoArray){//recorrer ese array
+           newValue=parseFloat(nuevoArray[index]);//convertirlo a  numero
 
-          if(newValue){
+          if(newValue){//para que no cuente los lugares vacios
             sum += parseFloat(newValue);
             i += 1;
           }
@@ -70,67 +74,33 @@ function average (numbers) {
      return sum / i;
    }
    window.average = average;
-/*
-const sortData=(show, sortBy, sortOrder)=>{
-    return show.sort((a,b)=>{
-         let x=a[sortBy],
-             y=b[sortBy];
-             if(sortOrder==="asc"){
-                  return((x<y)? -1 :((x>y)? 1: 0));
-             }
-             if(sortOrder === "desc"){
-                  return((x>y)? -1 :((x<y) ? 1: 0));
-             }
-    }
-    )};
-   window.sortData = sortData;*/
-   //promedio
-  /* function average (valueOne){
-        let sum= 0;
-        if(!valueOne.length){
-             return sum;
-        }
-        for(let i=0; i<valueOne.length;i++){
-             sum += valueOne[i]
-        }
-        return sum/valueOne.length;
-   }
-   
-   window.average=average;*/
-  
-//devuelve el indice del forindicador
+
+
 
 /*
-let orderDAta= (valueOne,sortBy,sortOrder) =>{
-     let order=[];
-     switch(sortOrder){
-      case "TableAsc":
-      if(sortBy === ""){
-         order = valueOne.sort((a,b)=> (a. > b.  1: -1));
-      }
-      else(){
+function orderDAta(arr){
 
-      }
-      break;
-      case "TableDesc":
-      if(){
-
+     let newArr=Object.keys(arr);
+     for(let index in newArr){
+          newArrTwo=parseFloat(newArr[index]);
+          
      }
-     else(){
+     newArrTwo.sort(a, b) {
+          
+          if (a.value > b.value) {
+            return 1;
+          }
+          if (a.value < b.value) {
+            return -1;
+          }
+          return 0;
+        });
+          
+        
 
-     }
-     break;
-     default:
-     }
-     return order;
-};
-window.orderDAta=orderDAta
 
-//computeStats(data) funcion para sacar promedio
+}
 
- const filterMujeres= (data,condition) =>{
-     let result= data.filter(element=>{ 
-          return element.indicatorName.includes("mujeres")});
-          return result;
- }
- window.filterMujeres= filterMujeres*/
+
+window.orderDAta=orderDAta*/
+
