@@ -75,13 +75,16 @@ document.getElementById("buttonIndicator").addEventListener("click",()=>{// boto
             
 
                document.getElementById("promedio").addEventListener("click",()=>{
-                  
-                   
+                    document.getElementById("promedioText").innerHTML = " "
+              let idText = document.getElementById("promedioText")
+              let text= document.createElement("text");  
                 const travel_average =window.average(show);
-                console.log(travel_average);
-
-                    
-                 document.getElementById("promedioText").innerHTML+=travel_average;
+                let NodeText = document.createTextNode( "El promedio de los valores es :"+ travel_average);
+                text.appendChild(NodeText);
+                idText.appendChild(text);
+                
+               
+              
      });
     });
     

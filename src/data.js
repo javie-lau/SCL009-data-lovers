@@ -54,20 +54,20 @@ window.filterData = filterData;
 
 function average (numbers) {
 
-    
-
      let sum = 0;
-     let nuevoArray=Object.values(numbers);
-    
-     for (let index in numbers){
-          
-          newValue=numbers[index];
+     let i = 0;
+     var nuevoArray= Object.values(numbers);
+      
+     for (let index in nuevoArray){
+          newValue=parseFloat(nuevoArray[index]);
+
+          if(newValue){
+            sum += parseFloat(newValue);
+            i += 1;
+          }
          
-          sum += parseFloat(newValue);
-        }
-     
-     return sum / nuevoArray.length;
-    
+        }     
+     return sum / i;
    }
    window.average = average;
 /*
