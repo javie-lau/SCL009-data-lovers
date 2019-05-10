@@ -3,6 +3,11 @@
 document.getElementById("paginaUno").style.display="block";//invisible
 document.getElementById("root").style.display="none";//visible
 
+document.getElementById("logo").addEventListener("click",() =>{
+     document.getElementById("paginaUno").style.display="block";//invisible
+     document.getElementById("root").style.display="none";//visible   
+})
+
 let show="";
 let keyOne="";
 let valueOne="";
