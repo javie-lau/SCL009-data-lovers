@@ -225,7 +225,9 @@ h6{
 
 @media screen and (max-width:400px){
     
-	
+	size{
+        width:100%;
+    }
 	
 }
 
