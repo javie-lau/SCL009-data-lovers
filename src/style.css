@@ -221,6 +221,28 @@ h6{
 .textFinal{
 	margin-top: 10%;
 }
+#prueba table{
+	border:3px solid green;
+	width: 80%;
+	align-content:center;
+	margin-left: 10%;
+	  
+ 	  
+}
+#prueba th {
+	height: 50px;
+  }
+  #promedioText text{
+
+	color: white;
+	font-family: 'Allerta Stencil', sans-serif;
+	text-align: center;
+	padding-top: 1.5rem;
+	position: relative;
+	margin-left:15%;
+	margin-top:50%;
+
+  }
 
 
 @media screen and (max-width:400px){

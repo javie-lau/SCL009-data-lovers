@@ -75,7 +75,7 @@ document.getElementById("buttonIndicator").addEventListener("click",()=>{// boto
                body.appendChild(tabla);
                tabla.setAttribute("border", "2");
                tabla.setAttribute("align", "center");
-               tabla.setAttribute("color", "blue");
+               tabla.setAttribute("class","estiloTabla");
               
 
               /* document.getElementById("TableDesc").addEventListener("click",()=>{
