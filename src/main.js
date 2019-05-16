@@ -1,5 +1,5 @@
+google.load('visualization', '1.0',{'packages':['corechart']});
 
- 
 document.getElementById("paginaUno").style.display="block";//invisible
 document.getElementById("root").style.display="none";//visible
 
@@ -77,6 +77,23 @@ document.getElementById("buttonIndicator").addEventListener("click",()=>{// boto
                tabla.setAttribute("align", "center");
                tabla.setAttribute("class","estiloTabla");
               
+               google.charts.setOnLoadCallback(drawChart);
+
+
+                 function drawChart(){
+                    var data = google.visualization.arrayToDataTable([
+                         ["Element", "Density", { role: "style" } ],
+                         [ "2014", 70.6107025146484, "#581855"],
+                         ["2015", 70.4191970825195, "8d309b"],
+                         [ "2016",70.5944976806641, "c54fa7"],
+                         ["2017", 70.5223999023438, " 3426a4"]
+                       ]);
+                    
+                   
+                   var chart = new google.visualization.BarChart(document.getElementById("charts"));
+  chart.draw(data);
+                        
+               }
 
               /* document.getElementById("TableDesc").addEventListener("click",()=>{
 

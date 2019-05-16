@@ -5,6 +5,7 @@ let MEX = MEX;
 let BRA = BRA;
 let CHL = CHL;*/
 
+
 function filterData(pais, code){//agregue pais como parametro de la función
 
 let country_indicator = "";//variable que s etoma y va cambiando con swith
@@ -74,7 +75,6 @@ function average (numbers) {//promedio
      return sum / i;
    }
    window.average = average;
-
 
 
 /*
